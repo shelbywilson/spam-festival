@@ -137,6 +137,21 @@ p {
   text-align: left;
 }
 
+a {
+  background: var(--accent-2);
+  /* font-family: 'Arial', sans-serif; */
+  display: inline-block;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  background: var(--accent);
+}
+
 section p,
 .sans {
   font-family: "Arial", sans-serif;
