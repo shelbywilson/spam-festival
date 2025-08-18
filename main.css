@@ -218,7 +218,6 @@ img {
 }
 
 .marquee-container {
-  position: absolute;
   left: 0;
   top: 1px;
   width: 100%;
@@ -398,7 +397,9 @@ footer p {
     font-size: 1.5em;
   }
 
-  .marquee-container {
-    margin-top: -1rem;
+  .marquee-dots {
+    position: absolute;
+    top: var(--100vh);
+    margin-top: -0.975rem;
   }
 }
