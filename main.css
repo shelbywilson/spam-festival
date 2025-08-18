@@ -1,0 +1,394 @@
+:root {
+  background: #fff;
+  color: #000;
+  --accent: greenyellow;
+  --accent-2: #dbff79;
+  font-family: "ZXX", sans-serif;
+  --100vh: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Ready";
+  src: url("fonts/ReadyActive-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZXX";
+  src: url("fonts/zxx-sans.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: "ZXX-xed";
+  src: url("fonts/zxx-xed.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZXX-camo";
+  src: url("fonts/zxx-camo.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZXX-noise";
+  src: url("fonts/zxx-noise.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+} */
+
+h1 {
+  font-family: "Ready", cursive;
+  font-weight: 400;
+  font-size: 22rem;
+  margin: 0 3rem;
+  line-height: 100%;
+  text-align: right;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 4.5rem;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  text-align: right;
+  margin: 2rem 1rem;
+  font-family: "Arial", sans-serif;
+}
+
+section h2 {
+  margin-top: 6rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-style: normal;
+  margin: 0;
+  padding: 0.75rem 2rem;
+  text-align: right;
+  line-height: 100%;
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Ready";
+  font-size: 14rem;
+  font-weight: 100;
+  margin: 6rem 0 2rem 0;
+}
+
+.hero {
+  position: relative;
+  top: -50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pointer-events: none;
+  padding: 1.5rem;
+}
+
+.hero br {
+  display: none;
+}
+
+pre {
+  line-height: 105%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh + 1rem);
+  font-family: inherit;
+  color: var(--accent);
+  white: white;
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 144%;
+  word-spacing: 0.5em;
+  margin: 0 0 1rem 0;
+  max-width: 45ch;
+  text-align: left;
+}
+
+section p,
+.sans {
+  font-family: "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+figcaption {
+  font-size: 0.625rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.noise {
+  font-family: "ZXX-noise", sans-serif;
+}
+
+main {
+  text-align: right;
+  overflow-x: hidden;
+}
+
+main > section:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  padding: 0.5rem 2.5rem 8rem 2.5rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+section:first-child h1,
+section:first-child h2,
+section:first-child h3 {
+  margin: 0.5rem 0;
+  padding-right: 6%;
+}
+
+section:first-child h3:last-child {
+  margin-bottom: 3rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+figure {
+  margin: 5rem auto;
+  max-width: 700px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#marquees {
+  position: relative;
+  width: 30%;
+  aspect-ratio: 2;
+}
+
+.marquee-container {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 100%;
+  overflow: hidden;
+  color: #666;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-scroll 100s linear infinite;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.marquee-container p {
+  display: inline;
+  font-family: "ZXX";
+}
+
+marquee,
+marquee p {
+  color: #666;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+footer > div {
+  max-width: 40rem;
+  display: block;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 2rem 0;
+  max-width: 100%;
+  font-family: "Arial", sans-serif;
+  text-align: justify;
+  text-align-last: justify;
+  word-spacing: normal;
+  font-size: 0.875rem;
+}
+
+.logos {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logos img {
+  display: block;
+  width: 100%;
+  min-width: 5rem;
+  filter: grayscale(1);
+}
+
+.poster {
+  display: block;
+  margin-top: 10rem;
+}
+
+#spiral {
+  height: 30rem;
+  width: 100%;
+  line-height: 100%;
+  position: relative;
+}
+.title-graphic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.two-col-count {
+  column-count: 2;
+  max-width: 1100px;
+  column-gap: 2rem;
+}
+
+.artists p {
+  background: #dbff79;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+.highlight {
+  background: #dbff79;
+  display: inline-block;
+}
+
+.large {
+  font-size: 1.75em;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 8rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-right: 0;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-top: 7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  h4 {
+    font-size: 5rem;
+  }
+
+  section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .hero {
+    padding: 1rem;
+    height: var(--100vh);
+  }
+
+  #hero {
+    height: calc(var(--100vh) + 1rem);
+  }
+
+  .two-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .two-col-count {
+    column-count: 1;
+  }
+  .title-graphic {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logos img {
+    max-width: 8rem;
+  }
+
+  .poster {
+    margin-top: 2rem;
+  }
+
+  .large {
+    font-size: 1.5em;
+  }
+}
