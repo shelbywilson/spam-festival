@@ -1,3 +1,3 @@
 # SPAM New Media Festival 2025
 
-Hero animation uses https://play.ertdfgcvb.xyz/
+Hero animation uses ASCII play: https://github.com/ertdfgcvb/play.core / https://play.ertdfgcvb.xyz/ 
