@@ -202,13 +202,13 @@
 
   <script>
     window.onload = () => {
-      document.documentElement.style.setProperty('--100vh', `${window.innerHeight}px`);
+      document.documentElement.style.setProperty('--100vh', `${window.innerHeight + 10}px`);
     }
   </script>
   <script type="module">
 
     // Import the program runner
-    import { run } from './ascii-play/run.js'
+    import { run } from './ascii-play/run.min.js'
 
     import * as program from './ascii-play/sketch.js'
     import * as spiral from './ascii-play/spiral.js'
