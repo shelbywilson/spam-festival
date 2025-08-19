@@ -139,9 +139,9 @@ p {
 
 a {
   background: var(--accent-2);
-  /* font-family: 'Arial', sans-serif; */
-  display: inline-block;
-  padding: 0.5rem;
+  display: inline-flex;
+  gap: 1.5rem;
+  padding: 0.5rem 0.75rem;
   text-transform: uppercase;
   color: #000;
   font-size: 2rem;
@@ -200,6 +200,10 @@ section:first-child h3 {
 
 section:first-child h3:last-child {
   margin-bottom: 3rem;
+}
+
+#program p {
+  margin: 3rem 0;
 }
 
 .two-col {
@@ -355,7 +359,7 @@ footer p {
 
   section h2 {
     font-size: 2rem;
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
 
   h3 {
@@ -365,7 +369,7 @@ footer p {
 
   h4 {
     font-size: 5rem;
-    font-family: 'ZXX', sans-serif;
+    font-family: "ZXX", sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
   }
@@ -373,6 +377,11 @@ footer p {
   section {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-bottom: 4rem;
+  }
+
+  #program p {
+    margin: 0 0 2rem 0;
   }
 
   .hero {
@@ -387,6 +396,7 @@ footer p {
   .two-col {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
   }
   .two-col-count {
     column-count: 1;
