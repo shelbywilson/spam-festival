@@ -346,6 +346,223 @@ footer p {
   font-size: 1.75em;
 }
 
+.floor-plan {
+  display: flex;
+}
+
+.gallery {
+  position: relative;
+  margin: 4rem auto;
+  max-width: 100rem;
+}
+
+.gallery img {
+  display: block;
+  max-width: 100%;
+  border: 2px, solid, #666;
+}
+
+.hover-zone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.hover-zone a {
+  position: absolute;
+  cursor: pointer;
+  background: unset;
+}
+
+.hover-zone .content {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  max-width: 25rem;
+  width: 100vw;
+  background: #fff;
+  padding: 1rem;
+  z-index: 100;
+  border: 1px solid;
+}
+
+.content {
+  pointer-events: none;
+}
+
+.hover-zone a:hover .content {
+  display: block;
+}
+
+.number {
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 100%;
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.625rem;
+  margin: -2rem auto 0 auto;
+  background: var(--accent-2);
+  transform: translate(-0.5rem, 0);
+}
+
+/* FLOOR 1 */
+
+[href="#Merve Ünsal"] {
+  top: 11%;
+  left: 28%;
+}
+
+[href="#Raphael Arar"] {
+  top: 32%;
+  left: 29%;
+}
+
+[href="#Nassim L'Ghoul"] {
+  top: 40%;
+  left: 11%;
+}
+
+[href="#Aaron Oldenburg"] {
+  top: 61%;
+  left: 13%;
+}
+
+[href="#Veronica Graham"] {
+  top: 58%;
+  left: 7%;
+}
+
+[href="#Maria Thrän"] {
+  top: 81%;
+  left: 7%;
+}
+
+[href="#Afroditi Psarra 1"] {
+  top: 85%;
+  left: 12%;
+}
+
+[href="#Schuyler deVos"] {
+  top: 95%;
+  left: 3%;
+}
+
+[href="#Jiawen Uffline"] {
+  top: 66%;
+  left: 22%;
+}
+
+[href="#Bailey Ambrose"] {
+  top: 73%;
+  left: 32%;
+}
+
+[href="#Jorge Ramos"] {
+  top: 72%;
+  left: 40%;
+}
+
+[href="#Ainaz Alipour"] {
+  top: 75%;
+  left: 58%;
+}
+
+[href="#Harshini J. Karunatane"] {
+  top: 75%;
+  left: 77%;
+}
+
+[href="#Leilei Xia"] {
+  top: 70%;
+  left: 88%;
+}
+
+[href="#Shelby Wilson"] {
+  top: 59%;
+  left: 58%;
+}
+
+[href="#Mai"] {
+  top: 59%;
+  left: 69%;
+}
+
+/* FLOOR 2 */
+
+[href="#Rose Xu"] {
+  top: 28%;
+  left: 22%;
+}
+
+[href="#Kate Bailey"] {
+  top: 28%;
+  left: 9%;
+}
+
+[href="#Vishal Kumaraswamy"] {
+  top: 42%;
+  left: 14%;
+}
+
+[href="#Hans Kuzmich"] {
+  top: 35%;
+  left: 27%;
+}
+
+[href="#Mare Hirsch"] {
+  top: 67%;
+  left: 6%;
+}
+
+[href="#Abram Stern"] {
+  top: 87%;
+  left: 4%;
+}
+
+[href="#Afroditi Psarra 2"] {
+  top: 67%;
+  left: 15%;
+}
+
+[href="#Neeti Sivakumar"] {
+  top: 57%;
+  left: 28%;
+}
+
+[href="#Drishya Subramaniam"] {
+  top: 74%;
+  left: 28%;
+}
+
+[href="#Tivon Rice"] {
+  top: 87%;
+  left: 28%;
+}
+
+[href="#Umut Gunduz"] {
+  top: 80%;
+  left: 36%;
+}
+
+[href="#Lena Ferro"] {
+  top: 68%;
+  left: 45%;
+}
+
+[href="#McKinley Smith"] {
+  top: 68%;
+  left: 61%;
+}
+
+[href="#Alina Nazmeeva"] {
+  top: 68%;
+  left: 77%;
+}
+
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 50vw;
