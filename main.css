@@ -4,7 +4,7 @@
   --accent: greenyellow;
   --accent-2: #dbff79;
   font-family: "ZXX", sans-serif;
-  --vh100: 100vh;
+  --vh100: 720px;
 }
 
 * {
@@ -325,11 +325,12 @@ footer p {
   column-gap: 2rem;
 }
 
-.artists p {
+#program .artists p {
   background: #dbff79;
   display: inline-block;
   text-transform: uppercase;
   margin-right: 1rem;
+  margin: 0 1rem 1rem 1rem;
 }
 
 .highlight {
@@ -425,6 +426,9 @@ footer p {
   .marquee-dots {
     position: absolute;
     top: var(--vh100);
-    margin-top: -0.975rem;
+  }
+
+  #program .artists p {
+    margin: 0.5rem 0.5rem 0.5rem 0;
   }
 }
