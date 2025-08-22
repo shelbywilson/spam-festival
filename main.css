@@ -18,6 +18,10 @@ body {
   font-size: 16px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Ready";
   src: url("fonts/ReadyActive-Light.woff") format("woff");
