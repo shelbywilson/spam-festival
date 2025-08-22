@@ -352,13 +352,12 @@ footer p {
 
 .gallery {
   position: relative;
-  margin: 4rem auto;
-  max-width: 100rem;
+  margin: 1rem auto;
+  max-width: 48%;
 }
 
 .gallery img {
   display: block;
-  max-width: 100%;
   border: 2px, solid, #666;
 }
 
@@ -417,149 +416,144 @@ footer p {
 }
 
 [href="#Raphael Arar"] {
-  top: 32%;
-  left: 29%;
+  top: 30%;
+  left: 30%;
 }
 
 [href="#Nassim L'Ghoul"] {
-  top: 40%;
-  left: 11%;
-}
-
-[href="#Aaron Oldenburg"] {
-  top: 61%;
-  left: 13%;
-}
-
-[href="#Veronica Graham"] {
-  top: 58%;
-  left: 7%;
-}
-
-[href="#Maria Thrän"] {
-  top: 81%;
-  left: 7%;
-}
-
-[href="#Afroditi Psarra 1"] {
-  top: 85%;
+  top: 38%;
   left: 12%;
 }
 
+[href="#Aaron Oldenburg"] {
+  top: 58%;
+  left: 14%;
+}
+
+[href="#Veronica Graham"] {
+  top: 56%;
+  left: 8%;
+}
+
+[href="#Maria Thrän"] {
+  top: 79%;
+  left: 8%;
+}
+
+[href="#Afroditi Psarra 1"] {
+  top: 80%;
+  left: 13%;
+}
+
 [href="#Schuyler deVos"] {
-  top: 95%;
-  left: 3%;
+  top: 90%;
+  left: 4%;
 }
 
 [href="#Jiawen Uffline"] {
-  top: 66%;
-  left: 22%;
+  top: 63%;
+  left: 23%;
 }
 
 [href="#Bailey Ambrose"] {
-  top: 73%;
+  top: 71%;
   left: 32%;
 }
 
 [href="#Jorge Ramos"] {
-  top: 72%;
-  left: 40%;
+  top: 68%;
+  left: 41%;
 }
 
 [href="#Ainaz Alipour"] {
-  top: 75%;
-  left: 58%;
+  top: 71%;
+  left: 59%;
 }
 
 [href="#Harshini J. Karunatane"] {
-  top: 75%;
+  top: 71%;
   left: 77%;
 }
 
 [href="#Leilei Xia"] {
-  top: 70%;
+  top: 66%;
   left: 88%;
 }
 
 [href="#Shelby Wilson"] {
-  top: 59%;
-  left: 58%;
-}
-
-[href="#Mai"] {
-  top: 59%;
-  left: 69%;
+  top: 56%;
+  left: 59%;
 }
 
 /* FLOOR 2 */
 
 [href="#Rose Xu"] {
-  top: 28%;
-  left: 22%;
+  top: 26%;
+  left: 23%;
 }
 
 [href="#Kate Bailey"] {
-  top: 28%;
-  left: 9%;
+  top: 26%;
+  left: 10%;
 }
 
 [href="#Vishal Kumaraswamy"] {
-  top: 42%;
-  left: 14%;
+  top: 37%;
+  left: 16%;
 }
 
 [href="#Hans Kuzmich"] {
-  top: 35%;
-  left: 27%;
+  top: 32%;
+  left: 28%;
 }
 
 [href="#Mare Hirsch"] {
-  top: 67%;
-  left: 6%;
+  top: 64%;
+  left: 7%;
 }
 
 [href="#Abram Stern"] {
-  top: 87%;
-  left: 4%;
+  top: 83%;
+  left: 5%;
 }
 
 [href="#Afroditi Psarra 2"] {
-  top: 67%;
-  left: 15%;
+  top: 64%;
+  left: 16%;
 }
 
 [href="#Neeti Sivakumar"] {
-  top: 57%;
-  left: 28%;
+  top: 54%;
+  left: 29%;
 }
 
 [href="#Drishya Subramaniam"] {
-  top: 74%;
-  left: 28%;
+  top: 71%;
+  left: 29%;
 }
 
 [href="#Tivon Rice"] {
-  top: 87%;
-  left: 28%;
+  top: 83%;
+  left: 29%;
 }
 
 [href="#Umut Gunduz"] {
-  top: 80%;
-  left: 36%;
+  top: 77%;
+  left: 37%;
 }
 
 [href="#Lena Ferro"] {
-  top: 68%;
-  left: 45%;
+  top: 64%;
+  left: 46%;
 }
 
 [href="#McKinley Smith"] {
-  top: 68%;
-  left: 61%;
+  top: 64%;
+  left: 62%;
 }
 
 [href="#Alina Nazmeeva"] {
-  top: 68%;
+  top: 64%;
   left: 77%;
 }
 
@@ -651,5 +645,9 @@ footer p {
 
   #program .artists p {
     margin: 0.5rem 0.5rem 0.5rem 0;
+  }
+
+  .hover-zone a:hover .content {
+    display: none;
   }
 }
