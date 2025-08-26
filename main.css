@@ -157,6 +157,7 @@ a:hover {
 }
 
 section p,
+.descriptions p,
 .sans {
   font-family: "Arial", sans-serif;
   font-size: 1.25rem;
@@ -348,6 +349,9 @@ footer p {
 
 .floor-plan {
   display: flex;
+  padding: 0.5rem 2.5rem 4rem 2.5rem;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .gallery {
@@ -389,6 +393,12 @@ footer p {
 
 .content {
   pointer-events: none;
+}
+
+.content em,
+.descriptions em {
+  font-weight: bold;
+  font-style: normal;
 }
 
 .hover-zone a:hover .content {
@@ -557,6 +567,46 @@ footer p {
   left: 77%;
 }
 
+.descriptions {
+  max-width: 44rem;
+  margin: 0 auto;
+  border-top: 1px solid;
+}
+
+.descriptions>li {
+  list-style: none;
+  margin: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid;
+}
+
+.descriptions>li>div:first-child {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 4rem 3fr 2fr 3fr;
+}
+
+.full-description {
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+.full-description p {
+  margin: 1rem 0;
+  max-width: unset;
+}
+
+.full-description img {
+  width: 400px;
+  margin: 3rem auto 0 auto;
+}
+
+.descriptions a {
+  font-size: unset;
+  padding: unset;
+}
+
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 50vw;
@@ -650,4 +700,23 @@ footer p {
   .hover-zone a:hover .content {
     display: none;
   }
+
+  .descriptions>li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 3rem 0;
+  }
+
+  .descriptions li>div:first-child {
+    grid-template-columns: 4rem 2fr 3fr;
+  }
+
+  .descriptions li>div:first-child img {
+    grid-row: span 2;
+  }
+
+  .full-description {
+    margin-left: 0;
+  }
+
 }
