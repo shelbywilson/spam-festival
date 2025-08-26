@@ -572,8 +572,9 @@ a h2 {
 }
 
 .descriptions {
-  max-width: 44rem;
+  max-width: 80%;
   margin: 0 auto 5rem;
+  padding-inline-start: unset;
 }
 
 .descriptions>li {
@@ -716,22 +717,8 @@ a h2 {
     display: none;
   }
 
-  .descriptions>li {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 3rem 0;
-  }
-
-  .descriptions li>div:first-child {
-    grid-template-columns: 4rem 2fr 3fr;
-  }
-
   .descriptions li>div:first-child img {
     grid-row: span 2;
-  }
-
-  .full-description {
-    margin-left: 0;
   }
 
 }
