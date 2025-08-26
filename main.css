@@ -347,6 +347,10 @@ footer p {
   font-size: 1.75em;
 }
 
+a h2 {
+  margin: 0;
+}
+
 .floor-plan {
   display: flex;
   padding: 0.5rem 2.5rem 4rem 2.5rem;
