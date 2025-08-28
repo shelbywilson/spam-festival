@@ -317,6 +317,9 @@
         </div>
       </div>
     </section>
+
+    <button type="button" id="expand-all">Expand All</button>
+
     <ul class="descriptions">
       <button type="button" class="collapsible" id="Merve Ünsal">
         1&emsp;Merve Ünsal
@@ -1890,9 +1893,9 @@
   </footer>
 
   <script>
-    var coll = document.getElementsByClassName("collapsible");
     var i;
 
+    var coll = document.getElementsByClassName("collapsible");
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
@@ -1902,6 +1905,37 @@
         } else {
           content.style.display = "block";
         }
+      });
+    }
+
+    var expand = document.getElementById("expand-all");
+    expand.addEventListener("click", function() {
+      if (expand.innerHTML === "Collapse All") {
+        expand.innerHTML = "Expand All";
+        for (i = 0; i < coll.length; i++) {
+          coll[i].classList.remove("active");
+          var content = coll[i].nextElementSibling;
+          content.style.display = "none";
+        }
+      } else {
+        expand.innerHTML = "Collapse All";
+        for (i = 0; i < coll.length; i++) {
+          coll[i].classList.add("active");
+          var content = coll[i].nextElementSibling;
+          content.style.display = "block";
+        }
+      }
+    });
+
+    var hover = document.querySelectorAll(".hover-zone a");
+    for (i = 0; i < hover.length; i++) {
+      hover[i].addEventListener("click", function() {
+        var link = this.getAttribute('href');
+        var id = link.substring(1);
+        var button = document.getElementById(id);
+        button.classList.add("active");
+        var content = button.nextElementSibling;
+        content.style.display = "block";
       });
     }
   </script>
