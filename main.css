@@ -353,6 +353,7 @@ a h2 {
 
 .floor-plan {
   display: flex;
+  justify-content: space-between;
   padding: 0.5rem 2.5rem 4rem 2.5rem;
   max-width: 1800px;
   margin: 0 auto;
@@ -360,13 +361,14 @@ a h2 {
 
 .gallery {
   position: relative;
-  margin: 1rem auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   max-width: 48%;
 }
 
 .gallery img {
   display: block;
-  border: 2px, solid, #666;
+  border: 2px solid #666;
 }
 
 .hover-zone {
@@ -454,7 +456,7 @@ a h2 {
   left: 8%;
 }
 
-[href="#Afroditi Psarra 1"] {
+[href="#Psarra Kaputa"] {
   top: 80%;
   left: 13%;
 }
@@ -531,7 +533,7 @@ a h2 {
   left: 5%;
 }
 
-[href="#Afroditi Psarra 2"] {
+[href="#Afroditi Psarra"] {
   top: 64%;
   left: 16%;
 }
@@ -572,9 +574,10 @@ a h2 {
 }
 
 .descriptions {
-  max-width: 80%;
+  max-width: 1800px;
   margin: 0 auto 5rem;
   padding-inline-start: unset;
+  padding: 0 2.5rem;
 }
 
 .descriptions>li {
