@@ -428,6 +428,10 @@ a h2 {
   transform: translate(-0.5rem, 0);
 }
 
+.number:hover {
+  background: var(--accent);
+}
+
 /* FLOOR 1 */
 
 [href="#Merve Ünsal"] {
@@ -585,6 +589,10 @@ a h2 {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#expand-all:hover {
+  background-color: var(--accent);
 }
 
 .descriptions {
