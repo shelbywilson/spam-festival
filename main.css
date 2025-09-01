@@ -36,34 +36,10 @@ body {
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "ZXX-xed";
-  src: url("fonts/zxx-xed.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ZXX-camo";
-  src: url("fonts/zxx-camo.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ZXX-noise";
-  src: url("fonts/zxx-noise.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-} */
-
 h1 {
   font-family: "Ready", cursive;
   font-weight: 400;
-  font-size: 22rem;
+  font-size: 26vw;
   margin: 0 3rem;
   line-height: 100%;
   text-align: right;
@@ -76,7 +52,7 @@ h2 {
   text-transform: uppercase;
   padding: 0.5rem;
   text-align: right;
-  margin: 2rem 1rem;
+  margin: 0.25em 1rem;
   font-family: "Arial", sans-serif;
 }
 
@@ -112,6 +88,14 @@ h4 {
   justify-content: flex-end;
   pointer-events: none;
   padding: 1.5rem;
+}
+
+.hero h2 {
+  font-size: 6vw;
+}
+
+.hero h3 {
+  font-size: 4vw;
 }
 
 h1 br {
@@ -347,306 +331,14 @@ footer p {
   font-size: 1.75em;
 }
 
-a h2 {
-  margin: 0;
-}
 
-.floor-plan {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 2.5rem 4rem 2.5rem;
-  max-width: 1800px;
-  margin: 0 auto;
-}
-
-.gallery {
-  position: relative;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  max-width: 48%;
-}
-
-.gallery>img {
-  display: block;
-  border: 2px solid #666;
-}
-
-.hover-zone {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-
-.hover-zone a {
-  position: absolute;
-  cursor: pointer;
-  background: unset;
-}
-
-.hover-zone .content {
-  display: none;
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  max-width: 25rem;
-  width: 100vw;
-  background: #fff;
-  padding: 1rem;
-  z-index: 100;
-  border: 1px solid;
-}
-
-.content {
-  pointer-events: none;
-}
-
-.content img {
-  max-height: 80%;
-}
-
-.content em,
-.descriptions em {
-  font-weight: bold;
-  font-style: normal;
-}
-
-.hover-zone a:hover .content {
-  display: block;
-}
-
-.number {
-  font-size: 1.2rem;
-  text-align: center;
-  border: 1px solid;
-  border-radius: 100%;
-  width: 1.75rem;
-  height: 1.75rem;
-  line-height: 1.625rem;
-  margin: -2rem auto 0 auto;
-  background: var(--accent-2);
-  transform: translate(-0.5rem, 0);
-}
-
-.number:hover {
-  background: var(--accent);
-}
-
-/* FLOOR 1 */
-
-[href="#Merve Ünsal"] {
-  top: 11%;
-  left: 28%;
-}
-
-[href="#Raphael Arar"] {
-  top: 30%;
-  left: 30%;
-}
-
-[href="#Nassim L'Ghoul"] {
-  top: 38%;
-  left: 12%;
-}
-
-[href="#Aaron Oldenburg"] {
-  top: 58%;
-  left: 14%;
-}
-
-[href="#Veronica Graham"] {
-  top: 56%;
-  left: 8%;
-}
-
-[href="#Maria Thrän"] {
-  top: 79%;
-  left: 8%;
-}
-
-[href="#Psarra Kaputa"] {
-  top: 80%;
-  left: 13%;
-}
-
-[href="#Schuyler deVos"] {
-  top: 90%;
-  left: 4%;
-}
-
-[href="#Jiawen Uffline"] {
-  top: 63%;
-  left: 23%;
-}
-
-[href="#Bailey Ambrose"] {
-  top: 71%;
-  left: 32%;
-}
-
-[href="#Jorge Ramos"] {
-  top: 68%;
-  left: 41%;
-}
-
-[href="#Ainaz Alipour"] {
-  top: 71%;
-  left: 59%;
-}
-
-[href="#Harshini J. Karunatane"] {
-  top: 71%;
-  left: 77%;
-}
-
-[href="#Leilei Xia"] {
-  top: 66%;
-  left: 88%;
-}
-
-[href="#Shelby Wilson"] {
-  top: 56%;
-  left: 59%;
-}
-
-/* FLOOR 2 */
-
-[href="#Rose Xu"] {
-  top: 26%;
-  left: 23%;
-}
-
-[href="#Kate Bailey"] {
-  top: 26%;
-  left: 10%;
-}
-
-[href="#Vishal Kumaraswamy"] {
-  top: 37%;
-  left: 16%;
-}
-
-[href="#Hans Kuzmich"] {
-  top: 32%;
-  left: 28%;
-}
-
-[href="#Mare Hirsch"] {
-  top: 64%;
-  left: 7%;
-}
-
-[href="#Abram Stern"] {
-  top: 83%;
-  left: 5%;
-}
-
-[href="#Afroditi Psarra"] {
-  top: 64%;
-  left: 16%;
-}
-
-[href="#Neeti Sivakumar"] {
-  top: 54%;
-  left: 29%;
-}
-
-[href="#Drishya Subramaniam"] {
-  top: 71%;
-  left: 29%;
-}
-
-[href="#Tivon Rice"] {
-  top: 83%;
-  left: 29%;
-}
-
-[href="#Umut Gunduz"] {
-  top: 77%;
-  left: 37%;
-}
-
-[href="#Lena Ferro"] {
-  top: 64%;
-  left: 46%;
-}
-
-[href="#McKinley Smith"] {
-  top: 64%;
-  left: 62%;
-}
-
-[href="#Alina Nazmeeva"] {
-  top: 64%;
-  left: 77%;
-}
-
-#expand-all {
-  margin: 0.5rem 2.5rem 4rem 2.5rem;
-  padding: 1rem 2rem;
-  border: none;
-  background-color: var(--accent-2);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#expand-all:hover {
-  background-color: var(--accent);
-}
-
-.descriptions {
-  max-width: 44rem;
-  margin: 0 auto 5rem;
-  padding-inline-start: unset;
-  padding: 0 2.5rem;
-}
-
-.descriptions>li {
-  list-style: none;
-  padding: 1rem;
-  display: none;
-}
-
-.descriptions>li>div:first-child {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 3fr 3fr 3fr;
-}
-
-.full-description {
-  margin-top: 1rem;
-}
-
-.full-description p {
-  margin: 1rem 0;
-  max-width: unset;
-}
-
-.full-description img {
-  max-width: 70%;
-  max-height: 20rem;
-  margin: 3rem auto 0 auto;
-}
-
-.descriptions a {
-  font-size: unset;
-  padding: unset;
-}
-
-.collapsible {
-  background-color: var(--accent-2);
-  cursor: pointer;
-  padding: 1rem;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 20px;
-}
-
-.collapsible:hover {
-  background-color: var(--accent);
+@media screen and (min-width: 1600px) {
+  html, body {
+    font-size: 20px;
+  }
+  pre {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -660,7 +352,8 @@ a h2 {
     display: block;
   }
 
-  h2 {
+  h2,
+  .hero h2 {
     font-size: 3rem;
     margin: 1rem 0;
   }
@@ -670,6 +363,7 @@ a h2 {
     margin-top: 4rem;
   }
 
+  .hero h3,
   h3 {
     font-size: 1.375rem;
     padding: 0.75rem 0.5rem;
@@ -738,17 +432,4 @@ a h2 {
   #program .artists p {
     margin: 0.5rem 0.5rem 0.5rem 0;
   }
-
-  .full-description img {
-    max-width: 100%;
-  }
-
-  .hover-zone a:hover .content {
-    display: none;
-  }
-
-  .descriptions li>div:first-child img {
-    grid-row: span 2;
-  }
-
 }
