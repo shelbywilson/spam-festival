@@ -119,10 +119,11 @@ pre {
 p {
   font-size: 0.75rem;
   line-height: 144%;
-  word-spacing: 0.5em;
+  word-spacing: 0.3em;
   margin: 0 0 1rem 0;
   max-width: 45ch;
   text-align: left;
+  letter-spacing: -0.03em;
 }
 
 a {

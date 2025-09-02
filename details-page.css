@@ -1,18 +1,24 @@
 h1 {
-    font-size: 8rem;
+  font-size: 8rem;
 }
 
 .hero h2 {
-    font-size: 1.25rem;
-    margin: 0 3rem;
+  font-size: 1.25rem;
+  margin: 0 3rem;
 }
 
-.hero { 
-    height: auto;
+.hero {
+  height: auto;
 }
 
 main {
-    overflow-x: visible;
+  overflow-x: visible;
+}
+
+h5 {
+  text-align: left;
+  font-size: 1rem;
+  margin: 3rem 0 0 0;
 }
 
 .floor-plan {
@@ -28,7 +34,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.gallery>img {
+.gallery > img {
   display: block;
   border: 2px solid #666;
 }
@@ -52,19 +58,53 @@ main {
   top: 1rem;
   right: 1rem;
   max-width: 25rem;
-  width: 100vw;
+  width: max-content;
   background: #fff;
   padding: 1rem;
   z-index: 100;
   border: 1px solid;
 }
 
+.gallery:last-child .content {
+  right: auto;
+  left: 1rem;
+}
+
 .content {
   pointer-events: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.content .number {
+  margin: 0;
+  transform: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.content p {
+  text-transform: none;
+  margin: 0;
+}
+/* .content p:nth-last-child(3),
+.content p:last-child {
+    text-align: right;
+}
+.content p:nth-last-child(3),
+.content p:nth-last-child(2) {
+    grid-column: span 2;
+} */
+
+.content p:last-child {
+  grid-column: span 2;
 }
 
 .content img {
-  max-height: 80%;
+  grid-column: span 2;
 }
 
 .content em,
@@ -74,17 +114,17 @@ main {
 }
 
 .hover-zone a:hover .content {
-  display: block;
+  display: grid;
 }
 
 .number {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   text-align: center;
   border: 1px solid;
   border-radius: 100%;
-  width: 1.75rem;
-  height: 1.75rem;
-  line-height: 1.625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
   margin: -2rem auto 0 auto;
   background: var(--accent-2);
   transform: translate(-0.5rem, 0);
@@ -98,184 +138,163 @@ main {
 
 /* FLOOR 1 */
 
-[href="#Merve Ünsal"] {
+[href="#glitching-sinkholes"] {
   top: 11%;
   left: 28%;
 }
 
-[href="#Raphael Arar"] {
+[href="#intimate-commons"] {
   top: 30%;
   left: 30%;
 }
 
-[href="#Nassim L'Ghoul"] {
+[href="#soft-links"] {
   top: 38%;
   left: 12%;
 }
 
-[href="#Aaron Oldenburg"] {
+[href="#night-walks"] {
   top: 58%;
   left: 14%;
 }
 
-[href="#Veronica Graham"] {
+[href="#diatribes"] {
   top: 56%;
   left: 8%;
 }
 
-[href="#Maria Thrän"] {
+[href="#aeolian-tree"] {
   top: 79%;
   left: 8%;
 }
 
-[href="#Psarra Kaputa"] {
+[href="#kirigami-antennas"] {
   top: 80%;
   left: 13%;
 }
 
-[href="#Schuyler deVos"] {
+[href="#mammon-exe"] {
   top: 90%;
   left: 4%;
 }
 
-[href="#Jiawen Uffline"] {
+[href="#let-yourself-leak-a-little"] {
   top: 63%;
   left: 23%;
 }
 
-[href="#Bailey Ambrose"] {
+[href="#mylove"] {
   top: 71%;
   left: 32%;
 }
 
-[href="#Jorge Ramos"] {
+[href="#blur"] {
   top: 68%;
   left: 41%;
 }
 
-[href="#Ainaz Alipour"] {
+[href="#outsidein-khandaq"] {
   top: 71%;
   left: 59%;
 }
 
-[href="#Harshini J. Karunatane"] {
+[href="#siren-speaks"] {
   top: 71%;
   left: 77%;
 }
 
-[href="#Leilei Xia"] {
+[href="#the-palace"] {
   top: 66%;
   left: 88%;
 }
 
-[href="#Shelby Wilson"] {
+[href="#light-quilt"] {
   top: 56%;
   left: 68%;
 }
 
 /* FLOOR 2 */
 
-[href="#Rose Xu"] {
+[href="#am-i-alive"] {
   top: 26%;
   left: 23%;
 }
 
-[href="#Kate Bailey"] {
+[href="#is-it-listening"] {
   top: 26%;
   left: 10%;
 }
 
-[href="#Vishal Kumaraswamy"] {
+[href="#dreams-of-transformation"] {
   top: 37%;
   left: 16%;
 }
 
-[href="#Hans Kuzmich"] {
+[href="#radiant-center"] {
   top: 32%;
   left: 28%;
 }
 
-[href="#Mare Hirsch"] {
+[href="#soft-infrastructures-for-falling-worlds"] {
   top: 64%;
   left: 7%;
 }
 
-[href="#Abram Stern"] {
+[href="#numbstation"] {
   top: 83%;
   left: 5%;
 }
 
-[href="#Afroditi Psarra"] {
+[href="#altar-of-interdimensional-entanglements"] {
   top: 64%;
   left: 16%;
 }
 
-[href="#Neeti Sivakumar"] {
+[href="#the-hug"] {
   top: 54%;
   left: 29%;
 }
 
-[href="#Drishya Subramaniam"] {
+[href="#last-one-standing"] {
   top: 71%;
   left: 29%;
 }
 
-[href="#Tivon Rice"] {
+[href="#pattern-254-tetrapods"] {
   top: 83%;
   left: 29%;
 }
 
-[href="#Umut Gunduz"] {
+[href="#something-to-say-about-it-all"] {
   top: 77%;
   left: 37%;
 }
 
-[href="#Lena Ferro"] {
+[href="#in-the-cloud"] {
   top: 64%;
   left: 46%;
 }
 
-[href="#McKinley Smith"] {
+[href="#for-all-earthkind"] {
   top: 64%;
   left: 62%;
 }
 
-[href="#Alina Nazmeeva"] {
+[href="#bug-in-my-software"] {
   top: 64%;
   left: 77%;
 }
 
-#expand-all {
-  margin: 0.5rem 2.5rem 4rem 2.5rem;
-  padding: 1rem 2rem;
-  border: none;
-  background-color: var(--accent-2);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#expand-all:hover {
-  background-color: var(--accent);
-}
-
 .descriptions {
   max-width: 44rem;
-  margin: 0 auto 5rem;
+  margin: 5rem auto;
   padding-inline-start: unset;
   padding: 0 2.5rem;
 }
 
-.descriptions>li {
+.descriptions > li {
   list-style: none;
-  padding: 1rem;
-  display: none;
-}
-
-.descriptions>li>div:first-child {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 3fr 3fr 3fr;
+  margin: 0 0 10rem 0;
 }
 
 .full-description {
@@ -284,39 +303,48 @@ main {
 
 .full-description p {
   margin: 1rem 0;
-  max-width: unset;
+  max-width: 100%;
 }
 
 .full-description img {
-  max-width: 70%;
-  max-height: 20rem;
+  max-width: 100%;
+  max-height: 40rem;
   margin: 3rem auto 0 auto;
 }
 
+section p,
+.descriptions p,
+.sans {
+  font-size: 1rem;
+}
+
 .descriptions a {
-  font-size: unset;
+  font-size: inherit;
   padding: unset;
 }
 
-.collapsible {
-  background-color: var(--accent-2);
-  cursor: pointer;
-  padding: 1rem;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1.25rem;
+.artist-info {
   position: sticky;
   top: 0;
+  backdrop-filter: blur(6px);
+  padding: 0.5rem 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2rem 3fr 3fr 3fr;
+  align-items: center;
+  margin: 0 -1rem;
 }
 
-.collapsible:hover {
-  background-color: var(--accent);
+.artist-info .number {
+  margin: 0;
+  transform: none;
+}
+
+.artist-info p {
+  margin: 0;
 }
 
 @media screen and (max-width: 800px) {
-
   #program .artists p {
     margin: 0.5rem 0.5rem 0.5rem 0;
   }
@@ -329,17 +357,18 @@ main {
     display: none;
   }
 
-  .descriptions li>div:first-child img {
+  .descriptions li > div:first-child img {
     grid-row: span 2;
   }
-
 }
 @media screen and (max-width: 800px) {
-    .floor-plan {
-        flex-direction: column;
-    }
-
-    .gallery {
-        
-    }
+  .floor-plan {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .descriptions {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
 }
