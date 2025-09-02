@@ -3,6 +3,7 @@
   color: #000;
   --accent: greenyellow;
   --accent-2: #dbff79;
+  --accent-pink: #ef3f8d;
   font-family: "ZXX", sans-serif;
   --vh100: 720px;
 }
@@ -127,17 +128,34 @@ p {
 }
 
 a {
+  color: inherit;
+}
+
+.big-link {
   background: var(--accent-2);
   display: inline-flex;
   gap: 1.5rem;
   padding: 0.5rem 0.75rem;
   text-transform: uppercase;
-  color: #000;
   font-size: 2rem;
   text-decoration: none;
 }
 
-a:hover {
+.big-link.pink {
+  background: var(--accent-pink);
+  color: #fff;
+}
+
+.big-link.pink:hover {
+  background: #d01167;
+  color: #fff;
+}
+
+.big-link.pink polygon {
+  fill: #fff;
+}
+
+.big-link:hover {
   background: var(--accent);
 }
 
@@ -167,7 +185,7 @@ main {
   overflow-x: hidden;
 }
 
-main > section:first-child {
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -181,7 +199,7 @@ section {
   margin: 0 auto;
 }
 
-section:first-child h1,
+/* section:first-child h1,
 section:first-child h2,
 section:first-child h3 {
   margin: 0.5rem 0;
@@ -190,7 +208,7 @@ section:first-child h3 {
 
 section:first-child h3:last-child {
   margin-bottom: 3rem;
-}
+} */
 
 #program p {
   margin: 3rem 0;
@@ -199,6 +217,7 @@ section:first-child h3:last-child {
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 figure {
@@ -325,16 +344,17 @@ footer p {
 
 .highlight {
   background: #dbff79;
-  display: inline-block;
+  display: inline;
+  padding: 0.5rem 0;
 }
 
 .large {
   font-size: 1.75em;
 }
 
-
 @media screen and (min-width: 1600px) {
-  html, body {
+  html,
+  body {
     font-size: 20px;
   }
   pre {
@@ -384,7 +404,7 @@ footer p {
   }
 
   #program p {
-    margin: 0 0 2rem 0;
+    margin: 2rem 0;
   }
 
   .hero {
