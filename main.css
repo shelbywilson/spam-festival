@@ -3,6 +3,7 @@
   color: #000;
   --accent: greenyellow;
   --accent-2: #dbff79;
+  --accent-pink: #ef3f8d;
   font-family: "ZXX", sans-serif;
   --vh100: 720px;
 }
@@ -36,34 +37,10 @@ body {
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "ZXX-xed";
-  src: url("fonts/zxx-xed.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ZXX-camo";
-  src: url("fonts/zxx-camo.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ZXX-noise";
-  src: url("fonts/zxx-noise.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-} */
-
 h1 {
   font-family: "Ready", cursive;
   font-weight: 400;
-  font-size: 22rem;
+  font-size: 26vw;
   margin: 0 3rem;
   line-height: 100%;
   text-align: right;
@@ -76,7 +53,7 @@ h2 {
   text-transform: uppercase;
   padding: 0.5rem;
   text-align: right;
-  margin: 2rem 1rem;
+  margin: 0.25em 1rem;
   font-family: "Arial", sans-serif;
 }
 
@@ -114,6 +91,14 @@ h4 {
   padding: 1.5rem;
 }
 
+.hero h2 {
+  font-size: 6vw;
+}
+
+.hero h3 {
+  font-size: 4vw;
+}
+
 h1 br {
   display: none;
 }
@@ -135,28 +120,47 @@ pre {
 p {
   font-size: 0.75rem;
   line-height: 144%;
-  word-spacing: 0.5em;
+  word-spacing: 0.3em;
   margin: 0 0 1rem 0;
   max-width: 45ch;
   text-align: left;
+  letter-spacing: -0.03em;
 }
 
 a {
+  color: inherit;
+}
+
+.big-link {
   background: var(--accent-2);
   display: inline-flex;
   gap: 1.5rem;
   padding: 0.5rem 0.75rem;
   text-transform: uppercase;
-  color: #000;
   font-size: 2rem;
   text-decoration: none;
 }
 
-a:hover {
+.big-link.pink {
+  background: var(--accent-pink);
+  color: #fff;
+}
+
+.big-link.pink:hover {
+  background: #d01167;
+  color: #fff;
+}
+
+.big-link.pink polygon {
+  fill: #fff;
+}
+
+.big-link:hover {
   background: var(--accent);
 }
 
 section p,
+.descriptions p,
 .sans {
   font-family: "Arial", sans-serif;
   font-size: 1.25rem;
@@ -181,7 +185,7 @@ main {
   overflow-x: hidden;
 }
 
-main > section:first-child {
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -195,7 +199,7 @@ section {
   margin: 0 auto;
 }
 
-section:first-child h1,
+/* section:first-child h1,
 section:first-child h2,
 section:first-child h3 {
   margin: 0.5rem 0;
@@ -204,7 +208,7 @@ section:first-child h3 {
 
 section:first-child h3:last-child {
   margin-bottom: 3rem;
-}
+} */
 
 #program p {
   margin: 3rem 0;
@@ -213,6 +217,7 @@ section:first-child h3:last-child {
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 figure {
@@ -339,11 +344,22 @@ footer p {
 
 .highlight {
   background: #dbff79;
-  display: inline-block;
+  display: inline;
+  padding: 0.5rem 0;
 }
 
 .large {
   font-size: 1.75em;
+}
+
+@media screen and (min-width: 1600px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+  pre {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -357,7 +373,8 @@ footer p {
     display: block;
   }
 
-  h2 {
+  h2,
+  .hero h2 {
     font-size: 3rem;
     margin: 1rem 0;
   }
@@ -367,6 +384,7 @@ footer p {
     margin-top: 4rem;
   }
 
+  .hero h3,
   h3 {
     font-size: 1.375rem;
     padding: 0.75rem 0.5rem;
@@ -386,7 +404,7 @@ footer p {
   }
 
   #program p {
-    margin: 0 0 2rem 0;
+    margin: 2rem 0;
   }
 
   .hero {
