@@ -160,17 +160,27 @@ h5 {
 /* FLOOR 1 */
 
 [href="#glitching-sinkholes"] {
-  top: calc(11% - 1.5rem);
-  left: 28%;
+  top: calc(24% - 1.5rem);
+  left: 43%;
 }
 
 [href="#intimate-commons"] {
-  top: calc(30% - 1.5rem);
-  left: 30%;
+  top: calc(39% - 1.5rem);
+  left: 29%;
+}
+
+[href="#transhuman-trilogy"] {
+  top: calc(15% - 1.5rem);
+  left: 57.5%;
+}
+
+[href="#you-are-not-a-monster"] {
+  top: calc(26% - 1.5rem);
+  left: 29%;
 }
 
 [href="#soft-links"] {
-  top: calc(38% - 1.5rem);
+  top: calc(41% - 1.5rem);
   left: 12%;
 }
 
@@ -185,125 +195,130 @@ h5 {
 }
 
 [href="#aeolian-tree"] {
-  top: calc(79% - 1.5rem);
-  left: 8%;
+  top: calc(8% - 1.5rem);
+  left: 2%;
 }
 
 [href="#kirigami-antennas"] {
-  top: calc(80% - 1.5rem);
+  top: calc(85% - 1.5rem);
   left: 13%;
 }
 
 [href="#mammon-exe"] {
-  top: calc(90% - 1.5rem);
-  left: 4%;
+  top: calc(92.5% - 1.5rem);
+  left: 3.5%;
 }
 
 [href="#let-yourself-leak-a-little"] {
-  top: calc(63% - 1.5rem);
+  top: calc(66% - 1.5rem);
   left: 23%;
 }
 
 [href="#mylove"] {
-  top: calc(71% - 1.5rem);
-  left: 32%;
+  top: calc(73.5% - 1.5rem);
+  left: 36%;
 }
 
 [href="#blur"] {
-  top: calc(68% - 1.5rem);
-  left: 41%;
+  top: calc(66% - 1.5rem);
+  left: 42%;
 }
 
 [href="#outsidein-khandaq"] {
-  top: calc(71% - 1.5rem);
-  left: 59%;
-}
-
-[href="#siren-speaks"] {
-  top: calc(71% - 1.5rem);
-  left: 77%;
+  top: calc(67% - 1.5rem);
+  left: 78%;
 }
 
 [href="#the-palace"] {
-  top: calc(66% - 1.5rem);
-  left: 88%;
+  top: calc(73% - 1.5rem);
+  left: 59%;
 }
 
 [href="#light-quilt"] {
-  top: calc(56% - 1.5rem);
+  top: calc(59% - 1.5rem);
   left: 68%;
+}
+
+[href="#silistrato"] {
+  top: calc(67% - 1.5rem);
+  left: 88%;
+}
+
+[href="#pattern-254-tetrapods"] {
+  top: calc(46% - 1.5rem);
+  left: 24%;
 }
 
 /* FLOOR 2 */
 
 [href="#am-i-alive"] {
-  top: calc(26% - 1.5rem);
-  left: 23%;
+  top: calc(23% - 1.5rem);
+  left: 26%;
 }
 
 [href="#is-it-listening"] {
-  top: calc(26% - 1.5rem);
-  left: 10%;
+  top: calc(23% - 1.5rem);
+  left: 13%;
 }
 
 [href="#dreams-of-transformation"] {
-  top: calc(37% - 1.5rem);
-  left: 16%;
+  top: calc(33% - 1.5rem);
+  left: 19%;
 }
 
 [href="#radiant-center"] {
-  top: calc(32% - 1.5rem);
-  left: 28%;
+  top: calc(29% - 1.5rem);
+  left: 30%;
 }
 
 [href="#soft-infrastructures-for-falling-worlds"] {
-  top: calc(64% - 1.5rem);
-  left: 7%;
+  top: calc(61% - 1.5rem);
+  left: 9%;
 }
 
 [href="#numbstation"] {
-  top: calc(83% - 1.5rem);
-  left: 5%;
+  top: calc(79% - 1.5rem);
+  left: 8%;
 }
 
 [href="#altar-of-interdimensional-entanglements"] {
-  top: calc(64% - 1.5rem);
-  left: 16%;
+  top: calc(61% - 1.5rem);
+  left: 18%;
 }
 
 [href="#the-hug"] {
-  top: calc(54% - 1.5rem);
-  left: 29%;
+  top: calc(52% - 1.5rem);
+  left: 31.5%;
 }
 
 [href="#last-one-standing"] {
-  top: calc(71% - 1.5rem);
-  left: 29%;
-}
-
-[href="#pattern-254-tetrapods"] {
-  top: calc(83% - 1.5rem);
-  left: 29%;
+  top: calc(78% - 1.5rem);
+  left: 31%;
 }
 
 [href="#something-to-say-about-it-all"] {
-  top: calc(77% - 1.5rem);
+  top: calc(74% - 1.5rem);
   left: 37%;
 }
 
 [href="#in-the-cloud"] {
-  top: calc(64% - 1.5rem);
-  left: 46%;
+  top: calc(61% - 1.5rem);
+  left: 48%;
+}
+
+[href="#siren-speaks"] {
+  top: calc(39% - 1.5rem);
+  left: 39%;
 }
 
 [href="#for-all-earthkind"] {
-  top: calc(64% - 1.5rem);
-  left: 62%;
+  top: calc(61% - 1.5rem);
+  left: 61%;
 }
 
 [href="#bug-in-my-software"] {
-  top: calc(64% - 1.5rem);
-  left: 77%;
+  top: calc(61% - 1.5rem);
+  left: 74.5%;
 }
 
 .descriptions {
