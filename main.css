@@ -337,7 +337,6 @@ footer p {
 #program .artists p {
   background: #dbff79;
   display: inline-block;
-  text-transform: uppercase;
   margin-right: 1rem;
   margin: 0 1rem 1rem 1rem;
 }
