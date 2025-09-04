@@ -488,6 +488,9 @@ li {
   .descriptions li > div:first-child img {
     grid-row: span 2;
   }
+  section p, .descriptions p, .sans {
+    line-height: 140%;
+  }
 
   .floor-plan {
     grid-template-columns: 1fr;
