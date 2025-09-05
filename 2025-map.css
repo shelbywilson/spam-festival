@@ -98,6 +98,11 @@
   font-style: normal;
 }
 
+.performance-date {
+  background: var(--accent-2);
+  padding: 0.25rem 0;
+}
+
 .content .performance-date {
   position: absolute;
   background: var(--accent-2);
