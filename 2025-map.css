@@ -1,0 +1,317 @@
+.floor-plan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+.gallery {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gallery > img {
+  display: block;
+  border: 2px solid;
+}
+
+.hover-zone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.hover-zone a {
+  position: absolute;
+  cursor: pointer;
+  background: unset;
+  margin-left: -0.9375rem;
+  margin-right: 0.9375rem;
+}
+
+.hover-zone a:hover .content {
+  display: grid;
+}
+
+.hover-zone a:hover {
+  background: none;
+}
+
+.gallery:last-child .content {
+  right: auto;
+  left: 1rem;
+}
+
+.hover-zone .content {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  max-width: 30rem;
+  width: max-content;
+  background: #fff;
+  padding: 1rem;
+  z-index: 100;
+  border: 1px solid;
+}
+
+.content {
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.content .number {
+  margin: 0;
+  transform: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.content p {
+  text-transform: none;
+  margin: 0;
+}
+
+.content p:nth-child(4) {
+  text-align: right;
+}
+
+
+.content p:last-child {
+  grid-column: span 2;
+}
+
+.content img {
+  grid-column: span 2;
+  max-height: calc(100vh - 15rem);
+}
+
+.content em,
+.descriptions em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.content .performance-date {
+  position: absolute;
+  background: var(--accent-2);
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.25rem 0;
+}
+
+/* FLOOR 1 */
+[href="#aeolian-tree"] {
+  top: calc(9% - 1.5rem);
+  left: 5%;
+}
+
+[href="#glitching-sinkholes"] {
+  top: calc(24% - 1.5rem);
+  left: 45%;
+}
+
+[href="#transhuman-trilogy"] {
+  top: calc(15% - 1.5rem);
+  left: 59.5%;
+}
+
+[href="#intimate-commons"] {
+  top: calc(39% - 1.5rem);
+  left: 31.5%;
+}
+
+[href="#you-are-not-a-monster"] {
+  top: calc(26% - 1.5rem);
+  left: 31.5%;
+}
+
+[href="#pattern-254-tetrapods"] {
+  top: calc(46% - 1.5rem);
+  left: 26%;
+}
+
+
+[href="#soft-links"] {
+  top: calc(41% - 1.5rem);
+  left: 14%;
+}
+
+[href="#night-walks"] {
+  top: calc(58% - 1.5rem);
+  left: 16%;
+}
+
+[href="#diatribes"] {
+  top: calc(56% - 1.5rem);
+  left: 10%;
+}
+
+[href="#kirigami-antennas"] {
+  top: calc(85% - 1.5rem);
+  left: 15%;
+}
+
+[href="#mammon-exe"] {
+  top: calc(92.5% - 1.5rem);
+  left: 5.75%;
+}
+
+[href="#let-yourself-leak-a-little"] {
+  top: calc(66% - 1.5rem);
+  left: 25%;
+}
+
+[href="#mylove"] {
+  top: calc(73.5% - 1.5rem);
+  left: 38%;
+}
+
+[href="#blur"] {
+  top: calc(66% - 1.5rem);
+  left: 44%;
+}
+
+[href="#outsidein-khandaq"] {
+  top: calc(67% - 1.5rem);
+  left: 80%;
+}
+
+[href="#the-palace"] {
+  top: calc(73% - 1.5rem);
+  left: 61%;
+}
+
+[href="#light-quilt"] {
+  top: calc(59% - 1.5rem);
+  left: 70%;
+}
+
+[href="#silistrato"] {
+  top: calc(67% - 1.5rem);
+  left: 90%;
+}
+/* FLOOR 2 */
+
+[href="#am-i-alive"] {
+  top: calc(23% - 1.5rem);
+  left: 28%;
+}
+
+[href="#is-it-listening"] {
+  top: calc(23% - 1.5rem);
+  left: 13%;
+}
+
+[href="#dreams-of-transformation"] {
+  top: calc(33% - 1.5rem);
+  left: 21%;
+}
+
+[href="#radiant-center"] {
+  top: calc(29% - 1.5rem);
+  left: 32.5%;
+}
+
+[href="#soft-infrastructures-for-falling-worlds"] {
+  top: calc(61% - 1.5rem);
+  left: 11%;
+}
+
+[href="#numbstation"] {
+  top: calc(79% - 1.5rem);
+  left: 10%;
+}
+
+[href="#altar-of-interdimensional-entanglements"] {
+  top: calc(61% - 1.5rem);
+  left: 20%;
+}
+
+[href="#the-hug"] {
+  top: calc(52% - 1.5rem);
+  left: 33.5%;
+}
+
+[href="#last-one-standing"] {
+  top: calc(78% - 1.5rem);
+  left: 33%;
+}
+
+[href="#something-to-say-about-it-all"] {
+  top: calc(74% - 1.5rem);
+  left: 37%;
+}
+
+[href="#in-the-cloud"] {
+  top: calc(61% - 1.5rem);
+  left: 50%;
+}
+
+[href="#siren-speaks"] {
+  top: calc(39% - 1.5rem);
+  left: 41%;
+}
+
+[href="#for-all-earthkind"] {
+  top: calc(61% - 1.5rem);
+  left: 63%;
+}
+
+[href="#bug-in-my-software"] {
+  top: calc(61% - 1.5rem);
+  left: 76.5%;
+}
+
+[href="#versioned-memories"] {
+  top: calc(47% - 1.5rem);
+  left: 47.5%;
+}
+
+/* peformances, floor 1 */
+.floor-plan-performances {
+  position: absolute;
+  top: 86%;
+  left: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+#first-floor .floor-plan-performances:before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  width: 2rem;
+  height: 2px;
+  top: 50%;
+  background: var(--accent-pink);
+}
+
+.floor-plan-performances a {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .floor-plan-performances {
+    gap: 0;
+  }
+
+  .floor-plan {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .hover-zone a:hover .content {
+    display: none;
+  }
+}
