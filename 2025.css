@@ -152,6 +152,10 @@ li {
   max-width: 100%;
 }
 
+.full-description em {
+  font-style: italic;
+}
+
 .full-description a {
   text-transform: none;
   background: inherit;
@@ -186,6 +190,11 @@ li {
   padding: 0.5rem 1rem;
   margin-bottom: 4rem;
 }
+
+.artist-info em {
+  font-style: normal;
+}
+
 .artist-info p {
   margin: 0;
 }

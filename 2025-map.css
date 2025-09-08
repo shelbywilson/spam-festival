@@ -91,8 +91,7 @@
   min-height: 3rem;
 }
 
-.content em,
-.descriptions em {
+.content em {
   font-weight: 400;
   font-style: normal;
 }
