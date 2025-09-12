@@ -80,7 +80,6 @@
   text-align: right;
 }
 
-
 .content p:last-child {
   grid-column: span 2;
 }
@@ -139,7 +138,6 @@
   top: calc(46% - 1.5rem);
   left: 26%;
 }
-
 
 [href="#soft-links"] {
   top: calc(41% - 1.5rem);
@@ -258,8 +256,8 @@
 }
 
 [href="#siren-speaks"] {
-  top: calc(39% - 1.5rem);
-  left: 41%;
+  top: calc(66% - 1.5rem);
+  left: 32%;
 }
 
 [href="#for-all-earthkind"] {
@@ -303,6 +301,38 @@
   left: 0;
 }
 
+.map-legend a {
+  text-decoration: none;
+}
+
+.map-legend .content {
+  display: inline-flex;
+  margin: 0.5rem 1rem;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.map-legend a .number {
+  position: static;
+  flex: 0 0 2rem;
+}
+
+.map-legend p {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.map-legend .highlight {
+  margin: 0;
+  background: none;
+  font-style: italic;
+  color: #000;
+}
+
+.map-legend em {
+  font-weight: 600;
+}
+
 @media screen and (max-width: 800px) {
   .floor-plan-performances {
     gap: 0;
@@ -316,5 +346,17 @@
 
   .hover-zone a:hover .content {
     display: none;
+  }
+
+  .map-legend .content {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  .map-legend .content p {
+    flex: 1 1 auto;
+  }
+  .map-legend .content p:last-child {
+    text-align: right;
   }
 }
