@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="main.css?v=1.08" rel="stylesheet" />
-  <link href="2025.css?v=1.08" rel="stylesheet" />
-  <link href="2025-map.css?v=1.08" rel="stylesheet" />
+  <link href="main.css?v=1.09" rel="stylesheet" />
+  <link href="2025.css?v=1.09" rel="stylesheet" />
+  <link href="2025-map.css?v=1.09" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SPAM New Media Festival 2025 Schedule</title>
   <meta name="description"
@@ -3899,6 +3899,52 @@
     </div>
   </footer>
 
+  <script>
+    window.onload = () => {
+      const elementsWithId = document.querySelectorAll('.descriptions li, section');
+      const visibleElements = new Map();
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const id = entry.target.id;
+
+            if (entry.isIntersecting) {
+              visibleElements.set(id, entry.boundingClientRect.top);
+            } else {
+              visibleElements.delete(id);
+            }
+          });
+
+          if (visibleElements.size > 0) {
+            let topmostId = null;
+            let minTop = Infinity;
+
+            visibleElements.forEach((top, id) => {
+              if (top < minTop) {
+                minTop = top;
+                topmostId = id;
+              }
+            });
+
+            if (topmostId && window.location.hash !== `#${topmostId}`) {
+              history.replaceState(null, null, `#${topmostId}`);
+            }
+          }
+        },
+        {
+          threshold: 0.1,
+          rootMargin: '0px 0px 0px 0px'
+        }
+      );
+
+      console.log(elementsWithId)
+
+      elementsWithId.forEach((el) => {
+        observer.observe(el);
+      });
+    }
+  </script>
 </body>
 
 </html>

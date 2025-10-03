@@ -160,6 +160,10 @@ li {
   text-transform: none;
   background: inherit;
   text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.full-description a:hover {
+  text-decoration: none;
 }
 
 .full-image {
