@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SPAM New Media Festival 2025</title>
   <meta name="description"
-    content="A space for critical exploration of digital arts and culture, September 12-14, 2025 at Georgetown Steam Pant">
+    content="A space for critical exploration of digital arts and culture, September 12-14, 2025 at Georgetown Steam Plant">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="preload" href="/2025/fonts/ReadyActive-Light.woff" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/2025/fonts/zxx-sans.woff" as="font" type="font/woff2" crossorigin>
@@ -20,7 +20,8 @@
 
   <div class="hero">
     <h1>
-      SP<br />AM
+      <span aria-hidden="true">SP<br />AM</span>
+      <span class="visually-hidden">SPAM</span>
     </h1>
     <h2>
       New Media Festival
@@ -64,7 +65,7 @@
         </a>
         <p>
           Organized and curated by our team of community art workers, this year's selection of works includes
-          mediations on borders, on commons, on deep time, and on bodies, a video game
+          meditations on borders, on commons, on deep time, and on bodies, a video game
           about caretaking, a VR
           experience about climate, and a surveilling balloon. We have slime moulds, sink holes, post-apocalyptic
           landscapes, and something lurking in the&nbsp;boiler.
@@ -278,8 +279,11 @@
     import * as spiral from '/2025/ascii-play/spiral.js'
 
 
+    const once = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
     run(program, {
       fps: 60,
+      once: once,
       element: document.querySelector('#hero')
     }).catch(function (e) {
       console.warn(e.message)
@@ -288,6 +292,7 @@
 
     run(spiral, {
       fps: 60,
+      once: once,
       element: document.querySelector('#spiral'),
     }).catch(function (e) {
       console.warn(e.message)

@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 100 900;
   font-stretch: 62% 125%;
-  font-display: swap;
+  font-display: block;
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -17,7 +17,7 @@
   font-style: normal;
   font-weight: 100 900;
   font-stretch: 62% 125%;
-  font-display: swap;
+  font-display: block;
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -29,7 +29,7 @@
   src: url("fonts/geist-mono-latin-ext.woff2") format("woff2");
   font-style: normal;
   font-weight: 100 900;
-  font-display: swap;
+  font-display: block;
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -41,7 +41,7 @@
   src: url("fonts/geist-mono-latin.woff2") format("woff2");
   font-style: normal;
   font-weight: 100 900;
-  font-display: swap;
+  font-display: block;
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -494,14 +494,33 @@ a:active {
     font-size: 15px;
   }
 
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    order: 1;
+  }
+
   .site-header {
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    order: 2;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+  }
+
+  .site-footer {
+    order: 3;
+  }
+
+  .sub-nav-bottom {
+    display: none;
   }
 
   .layout {
     grid-template-columns: minmax(0, 1fr);
     padding: 0.5rem;
     gap: 1.5rem;
+    margin-top: 6rem;
   }
 
   .panel-program,
@@ -542,6 +561,8 @@ a:active {
   .day-note {
     text-align: left;
     max-width: none;
+    width: fit-content;
+    margin-left: auto;
   }
 
   .performers {
