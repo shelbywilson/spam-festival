@@ -522,6 +522,7 @@ a:active {
 .performer .bio {
   margin: 0 0 0.9em 0;
   max-width: 70ch;
+  line-height: 1.4;
 }
 
 .performer-time,
@@ -654,6 +655,10 @@ a:active {
     font-size: calc(var(--font-scale) * 2rem);
     margin-top: -4rem;
     margin-bottom: 2rem;
+  }
+
+  .performer p {
+    font-size: 1rem;
   }
 
   .layout-single h1 {
