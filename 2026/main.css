@@ -309,12 +309,18 @@ a:active {
   margin-top: 2rem;
 }
 
+/* Date and Programming button always share one row; the date may wrap
+   within its own column, the button never shrinks or wraps */
 .day-top {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  gap: 0.6rem 1rem;
+  gap: 1rem;
+}
+
+.day-top .day-date {
+  min-width: 0;
 }
 
 .day-date {
@@ -384,6 +390,18 @@ a:active {
 
 .day-link {
   white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .day-date {
+    font-size: calc(var(--font-scale) * 1.7rem);
+  }
+
+  /* "Sat Oct 10" instead of "Saturday Oct 10" */
+  .day-long {
+    display: none;
+  }
 }
 
 .outlined-button-white {
