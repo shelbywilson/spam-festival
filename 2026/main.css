@@ -559,6 +559,30 @@ a:active {
   margin-bottom: 0;
 }
 
+/* Two-column bios can use the full width; each column stays readable */
+.performer .bio:has(> .bio-columns) {
+  max-width: none;
+}
+
+.bio-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem 2.4rem;
+}
+
+@media screen and (max-width: 900px) {
+  .bio-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.bio blockquote {
+  margin: 0;
+  padding-left: 1.2rem;
+  border-left: 0.2rem solid var(--ink);
+  font-style: italic;
+}
+
 .credit {
   color: var(--ink-3);
 }
